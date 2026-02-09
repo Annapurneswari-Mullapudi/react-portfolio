@@ -1,12 +1,10 @@
 /* About Section */
 .about {
-  /* background-color: #171717; */
   background-image: url('../assets/myImages/bg.png');
   padding: 60px 40px;
   color: white;
   font-family: 'Segoe UI', sans-serif;
   transform: translateY(20px);
-  height: 100vh;
 }
 
 .fade-in {
