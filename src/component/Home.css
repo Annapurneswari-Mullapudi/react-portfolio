@@ -1,0 +1,267 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  /* background-color: #171717; */
+  background-image: url('../assets/myImages/bg.png');
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom:1px solid #333;
+  color: white;
+  position: sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* background: #171717; */
+  background-image: url('../assets/myImages/bg.png');
+}
+
+.logo {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-weight: 500;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0 0 27.5px 0;
+}
+
+.nav-links li a.active {
+  border-bottom: 1.4px solid white;
+}
+
+
+.nav-links li a:hover{
+  color: hsl(0, 0%, 74%);
+}
+
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+.bar{
+  height: 3px;
+  width: 25px;
+  background: white;
+  border-radius: 3px;
+}
+#toggle{
+  display: none;
+}
+.close{
+  display: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+
+/*HomeContent*/
+.homeContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+.home-text p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.typewriter {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.typewriter::after {
+  content: "|";
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,50%,100% { opacity: 1; }
+  25%,75% { opacity: 0; }
+}
+
+
+.home-text h2 {
+  font-size: 1.5rem;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-outline,
+.btn-fill {
+  padding: 12px 20px;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: black;
+}
+
+.btn-fill {
+  background: white;
+  color: black;
+}
+
+.btn-fill:hover {
+  background: #ddd;
+}
+
+/* HomePage Image */
+.home-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+
+
+/* Sticky Social Icons */
+.social-sticky {
+  position: fixed;
+  top: 88%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1000;
+}
+
+.social-sticky a img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-sticky a img:hover {
+  transform: scale(1.2);
+  filter: brightness(140%);
+}
+
+
+
+
+/*--------------------------------------------------------------*/
+@media (max-width: 985px) {
+  .navBar{
+    background-color: #1f1f1f;
+  }
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    width: 200px;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .nav-links li a.active {
+    border: none;
+    color: gray;
+  }
+  .logo{
+    font-size: 20px;
+  }
+  .hamburger{
+    display: flex;
+  }
+  #toggle:checked ~ .nav-links{
+    display: flex;
+  }
+  .close{
+    display: block;
+  }
+
+  .homeContent {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,72 @@
+/* Career Goals Section */
+.goals {
+  /* background-color: #171717; */
+  background-image: url('../assets/myImages/bg.png');
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+
+.goals-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.goal-box {
+  /* background-color: #2b2b2b; */
+  border: 1px solid white;
+  padding: 30px 25px;
+  width: 300px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.goal-box:nth-child(1) { animation-delay: 0.2s; }
+.goal-box:nth-child(2) { animation-delay: 0.4s; }
+.goal-box:nth-child(3) { animation-delay: 0.6s; }
+
+.goal-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.goal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.goal-header img {
+  width: 28px;
+  height: 28px;
+}
+
+.goal-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.goal-box p {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.7;
+  text-align: justify;
+}
