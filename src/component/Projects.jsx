@@ -111,7 +111,7 @@ function Projects() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setShow(true),
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     if (projectsRef.current) observer.observe(projectsRef.current);

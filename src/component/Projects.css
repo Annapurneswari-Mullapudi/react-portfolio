@@ -93,3 +93,11 @@
 .btn-fill:hover {
   background: #ddd;
 }
+
+
+
+@media (max-width: 985px) {
+  .projects {
+  padding: 60px 40px;
+  }
+}
