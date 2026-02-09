@@ -26,9 +26,9 @@ const projectsData = [
     title: "Responsive portfolio",
     image: portfolio,
     tech: "HTML • CSS • React",
-    desc: "A web application designed to help manage event shoots by organizing client details, shoot locations, and assigned tasks in one place. Built with a clean UI to simplify daily shoot management.",
-    code: "https://github.com/Annapurneswari-Mullapudi/shoots-manager",
-    live: "https://annapurneswari-mullapudi.github.io/shoots-manager/",
+    desc: "A responsive personal portfolio built with React to showcase my projects, skills, and experience, featuring a clean UI and smooth user experience.",
+    code: "https://github.com/Annapurneswari-Mullapudi/react-portfolio",
+    live: "https://annapurneswari-mullapudi.github.io/react-portfolio/",
   },
   {
     title: "Netflix Landing Page",
