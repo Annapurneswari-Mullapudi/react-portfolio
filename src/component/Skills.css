@@ -9,7 +9,7 @@
   text-align: center;
   opacity: 0;
   transform: translateY(20px);
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .fade-in {
@@ -37,7 +37,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   width: 60%;
 }
 
@@ -94,10 +95,16 @@
   .skills-container {
     width: 90%;
   }
+  .skills-container {
+  margin: 30px 0px;
+  }
 }
 
 @media (max-width: 480px) {
   .skills-container {
     width: 90%;
+  }
+  .skills-container {
+  margin: 30px 0px;
   }
 }
